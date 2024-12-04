@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+    float: left;
+    width: 22%;
+    padding: 50px;
+    height: fit-content; 
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color:#fffdfd;
+
+  }
+  #more{
+    display: none;
+  }
+
+  </style>
+</head>
+<body style="border: solid; border-color: white; border-width: 200px; ">
+    <div class="box" style="background-color:#d58a3d;">
+       <img src="sedan.png" alt="ICON" height="40px" width="40px">
+        <p font-color: #fffdfd;"><h1>SEDANS</h1>
+        <h2>Choose a sedan for its
+             <br>affordability and excellent 
+             <br>fuel economy. Ideal for
+              cruising in the city or on 
+              <br>your next road trip.
+              <span id="dots">...</span><span id="more">
+                <br> A sedan is a 4-door passenger car
+                 <br>with a separate trunk built 
+                 <br>on a three-box body, 
+               <br> while a hatchback is a 4-door 
+                <br>vehicle assembled on a two-box body 
+               <br> with a tailgate that flips up. ”
+              </span></h2></p>
+              <button onclick="myFunction()" id="myBtn" style=" background-color: white;  border: none;
+  color:#d58a3d; border-radius: 50%;  font-size: 16px; padding: 10px;">learn more</button>
+            </div>
+              <script>
+              function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+              
+                if (dots.style.display === "none") {
+                  dots.style.display = "inline";
+                  btnText.innerHTML = "learn more";
+                  moreText.style.display = "none";
+                } else {
+                  dots.style.display = "none";
+                  btnText.innerHTML = "learn less";
+                  moreText.style.display = "inline";
+                }
+              }
+            </script>
+           
+        <div class="box" style="background-color:#2c6770; color: #fffdfd;">
+            <img src="suvs.png" alt="ICON" height="40px" width="40px">
+        <p style="color: #fffdfd;""><h1>SUVS</h1>
+            <h2>Take an SUV for its spacious
+                 <br>interior, power, and 
+                 <br>versatility.Perfect for your
+                 <br> next family vacation and off-road adventures.
+            </h2></p>
+        <button style=" background-color: white;  border: none;
+  color:#2c6770; border-radius: 50%;  font-size: 16px; padding: 10px;">learn more</button>
+        </div>
+        <div class="box" style="background-color:#183f3f; color: #fffdfd;"">
+            <img src="lux.png" alt="ICON" height="40px" width="40px">
+        <p style="color:#fffdfd;"><h1>LUXURY</h1>
+            <h2>Cruise in the best car brands
+            <br> without the bloated prices.
+            <br>Enjoy the enhanced comfort 
+             <br>of a luxury rental and arrive in style. 
+            </h2></p>
+        <button style=" background-color: white;  border: none;
+  color:#183f3f; border-radius: 50%;  font-size: 16px; padding: 10px;">learn more</button>
+       </div>
+
+</body>
+</html>
